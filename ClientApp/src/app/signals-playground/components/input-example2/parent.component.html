@@ -1,0 +1,12 @@
+<div>
+  <h2>Parent component</h2>
+  <p>Choose value:</p>
+  <input type="number" [(ngModel)]="selectedNumber"/>
+  <p>or</p>
+  <button (click)="generateRandom()">Generate random</button>
+  <br>
+  <button (click)="reset()">Reset</button>
+  <br>
+  <br>
+  <app-child [selectedNumber]="selectedNumber"></app-child>
+</div>

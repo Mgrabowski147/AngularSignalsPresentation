@@ -1,0 +1,15 @@
+<p>Choose value:</p>
+<input type="number" (change)="selectedChange()" [(ngModel)]="selectedNumber"/>
+<p>or</p>
+<button (click)="generateRandom()">Generate random</button>
+<br>
+<button (click)="reset()">Reset</button>
+<br>
+<br>
+
+<p>Is selected number divisible by 2: {{isDivisibleBy2}}</p>
+<p>Is selected number divisible by 3: {{isDivisibleBy3}}</p>
+<p>Is selected number divisible by 5: {{isDivisibleBy5}}</p>
+
+
+
